@@ -1,6 +1,6 @@
 {
   "types": ["lcd1602_new", "lcd1602_print"],
-  "category": "catLCD1602",
+  "category": "catMenu1",
   "scripts": [
     "blockly/blocks.js",
     "blockly/javascript.js"
