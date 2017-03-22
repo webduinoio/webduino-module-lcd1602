@@ -3,11 +3,33 @@ Blockly.Blocks['lcd1602_new'] = {
     this.appendDummyInput()
       .appendField(Blockly.Msg.WEBDUINO_LCD1602, "LCD 點陣液晶螢幕，SDA")
       .appendField(new Blockly.FieldDropdown([
-        ["4", "4"]
+        ["2", "2"],
+        ["3", "3"],
+        ["4", "4"],
+        ["5", "5"],
+        ["6", "6"],
+        ["7", "7"],
+        ["8", "8"],
+        ["9", "9"],
+        ["10", "10"],
+        ["11", "11"],
+        ["12", "12"],
+        ["13", "13"]
       ]), "sda_")
       .appendField(Blockly.Msg.WEBDUINO_LCD1602_SCL, "  SCL")
       .appendField(new Blockly.FieldDropdown([
-        ["5", "5"]
+        ["2", "2"],
+        ["3", "3"],
+        ["4", "4"],
+        ["5", "5"],
+        ["6", "6"],
+        ["7", "7"],
+        ["8", "8"],
+        ["9", "9"],
+        ["10", "10"],
+        ["11", "11"],
+        ["12", "12"],
+        ["13", "13"]
       ]), "scl_");
     this.setOutput(true);
     this.setColour(230);

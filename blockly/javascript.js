@@ -1,7 +1,7 @@
 Blockly.JavaScript['lcd1602_new'] = function (block) {
   var dropdown_sda_ = block.getFieldValue('sda_');
   var dropdown_scl_ = block.getFieldValue('scl_');
-  var code = 'getLCD1602(board)';
+  var code = 'getLCD1602(board,'+ dropdown_sda_ + ',' + dropdown_scl_ + ')';
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 

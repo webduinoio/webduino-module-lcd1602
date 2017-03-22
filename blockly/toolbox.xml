@@ -3,8 +3,8 @@
     <field name="VAR">lcd1602</field>
     <value name="VALUE">
       <block type="lcd1602_new">
-        <field name="sda_">8</field>
-        <field name="scl_">9</field>
+        <field name="sda_">10</field>
+        <field name="scl_">11</field>
       </block>
     </value>
   </block>
