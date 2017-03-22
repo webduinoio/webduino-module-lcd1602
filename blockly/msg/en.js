@@ -1,0 +1,1 @@
+MSG.catLCD1602 = "LCD Display";
