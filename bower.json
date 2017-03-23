@@ -1,7 +1,7 @@
 {
   "name": "webduino-module-lcd1602",
   "description": "LCD1602 Module for Webduino",
-  "main": "DFPlayer.js",
+  "main": "LCD1602.js",
   "authors": "",
   "license": "ISC",
   "keywords": [
