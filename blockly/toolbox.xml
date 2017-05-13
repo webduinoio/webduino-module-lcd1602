@@ -15,4 +15,5 @@
       </block>
     </value>
   </block>
+  <block type="lcd1602_clear"></block>
 </category>

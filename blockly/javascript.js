@@ -1,3 +1,11 @@
+Blockly.JavaScript['lcd1602_clear'] = function(block) {
+  var variable_lcd1602 = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('lcd1602'), Blockly.Variables.NAME_TYPE);
+  // TODO: Assemble JavaScript into code variable.
+  var code = variable_lcd1602+'.clear();\n';
+  return code;
+};
+
+
 Blockly.JavaScript['lcd1602_new'] = function (block) {
   var dropdown_sda_ = block.getFieldValue('sda_');
   var dropdown_scl_ = block.getFieldValue('scl_');

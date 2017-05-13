@@ -1,3 +1,17 @@
+Blockly.Blocks['lcd1602_clear'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldVariable("lcd1602"), "lcd1602")
+        .appendField("清除螢幕");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(65);
+    this.setTooltip('');
+    this.setHelpUrl('http://webduino.io/');
+  }
+};
+
+
 Blockly.Blocks['lcd1602_new'] = {
   init: function () {
     this.appendDummyInput()
