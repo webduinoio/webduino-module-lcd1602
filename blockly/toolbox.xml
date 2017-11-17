@@ -1,4 +1,4 @@
-<category id="catLCD1602" tags="fly,smart">
+<category id="catLCD1602" tags="fly,smart" index="5">
   <block type="variables_set">
     <field name="VAR">lcd1602</field>
     <value name="VALUE">
