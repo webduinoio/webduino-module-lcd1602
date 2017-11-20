@@ -1,1 +1,1 @@
-MSG.catLCD1602 = "LCD 点阵萤幕";
+MSG.catLCD1602 = "LCD 点阵屏幕";
