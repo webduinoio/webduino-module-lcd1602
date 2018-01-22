@@ -1,5 +1,5 @@
 {
-  "types": ["lcd1602_new", "lcd1602_print","lcd1602_clear"],
+  "types": ["lcd1602_new", "lcd1602_print","lcd1602_clear", "lcd1602_row_column"],
   "category": "catMenu1",
   "scripts": [
     "blockly/blocks.js",
