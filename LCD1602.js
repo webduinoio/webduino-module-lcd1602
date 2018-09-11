@@ -17,13 +17,14 @@
   var Module = scope.Module;
   var _backlight;
 
-  function LCD1602(board, sda, scl) {
+  function LCD1602(board, sda, scl, addr) {
     Module.call(this);
     this._board = board;
     self = this;
     self._sda = sda;
     self._scl = scl;
-    board.send([0xF0, 0x04, 0x18, 0x0 /*init*/ , sda, scl, 0xF7]);
+    self._addr = addr;
+    board.send([0xF0, 0x04, 0x18, 0x0 /*init*/ , sda, scl, addr, 0xF7]);
     board.on(webduino.BoardEvent.SYSEX_MESSAGE,
       function (event) {
         var m = event.message;
