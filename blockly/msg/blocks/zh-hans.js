@@ -1,6 +1,7 @@
 // LCD1602
 Blockly.Msg.WEBDUINO_LCD1602 = "LCD (1602)，SDA ";
 Blockly.Msg.WEBDUINO_LCD1602_SCL = " SCL";
+Blockly.Msg.WEBDUINO_LCD1602_ADDR = "  位址"
 Blockly.Msg.WEBDUINO_LCD1602_PRINT = "显示文字";
 Blockly.Msg.WEBDUINO_LCD1602_CLEAR = "清除屏幕内容";
 Blockly.Msg.WEBDUINO_LCD1602_START = "文字起始位置";
