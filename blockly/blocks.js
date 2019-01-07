@@ -4,7 +4,7 @@ var utmUrl = '?utm_source=cloud-blockly&utm_medium=contextMenu&utm_campaign=tuto
 Blockly.Blocks['lcd1602_clear'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("lcd1602"), "lcd1602")
+        .appendField(new Blockly.FieldVariable("lcd1602"), "name_")
         .appendField(Blockly.Msg.WEBDUINO_LCD1602_CLEAR);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -13,7 +13,6 @@ Blockly.Blocks['lcd1602_clear'] = {
     this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
-
 
 Blockly.Blocks['lcd1602_new'] = {
   init: function () {
@@ -81,6 +80,40 @@ Blockly.Blocks['lcd1602_print'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
+  }
+};
+
+Blockly.Blocks['lcd1602_row_column'] = {
+  init: function() {
+    this.appendDummyInput()
+      .appendField(new Blockly.FieldVariable("lcd1602"), "name_")
+      .appendField(Blockly.Msg.WEBDUINO_LCD1602_START, "文字起始位置")
+      .appendField(Blockly.Msg.WEBDUINO_LCD1602_COLUMN, "欄")
+      .appendField(new Blockly.FieldDropdown([["1","1"], ["2","2"]]), "row_")
+      .appendField(Blockly.Msg.WEBDUINO_LCD1602_ROW, "列")
+      .appendField(new Blockly.FieldDropdown([
+        ["1","1"],
+        ["2","2"],
+        ["3","3"],
+        ["4","4"],
+        ["5","5"],
+        ["6","6"],
+        ["7","7"],
+        ["8","8"],
+        ["9","9"],
+        ["10","10"],
+        ["11","11"],
+        ["12","12"],
+        ["13","13"],
+        ["14","14"],
+        ["15","15"],
+        ["16","16"]
+      ]), "column_");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(65);
+    this.setTooltip("");
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
   }
 };
