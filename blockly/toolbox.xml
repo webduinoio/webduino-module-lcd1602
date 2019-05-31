@@ -5,7 +5,6 @@
       <block type="lcd1602_new">
         <field name="sda_">10</field>
         <field name="scl_">11</field>
-        <field name="addr_">0x27</field>
       </block>
     </value>
   </block>
