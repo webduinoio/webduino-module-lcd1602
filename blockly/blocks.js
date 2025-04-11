@@ -1,6 +1,3 @@
-var mainUrl = 'https://resource.webduino.io/docs/cloud-component/component-light/lcd-module';
-var utmUrl = '';
-
 Blockly.Blocks['lcd1602_clear'] = {
   init: function() {
     this.appendDummyInput()
@@ -10,7 +7,7 @@ Blockly.Blocks['lcd1602_clear'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + '#lcd1602_clear');
+    this.setHelpUrl('https://resource.webduino.io/docs/cloud-component/component-light/lcd-module#lcd1602_clear');
   }
 };
 
@@ -67,7 +64,7 @@ Blockly.Blocks['lcd1602_new'] = {
     this.setOutput(true);
     this.setColour(230);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + '#lcd1602_new');
+    this.setHelpUrl('https://resource.webduino.io/docs/cloud-component/component-light/lcd-module#lcd1602_new');
   }
 };
 
@@ -80,7 +77,7 @@ Blockly.Blocks['lcd1602_print'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl(mainUrl + '#lcd1602_print');
+    this.setHelpUrl('https://resource.webduino.io/docs/cloud-component/component-light/lcd-module#lcd1602_print');
   }
 };
 
@@ -114,6 +111,6 @@ Blockly.Blocks['lcd1602_row_column'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip("");
-    this.setHelpUrl(mainUrl + '#lcd1602_row_column');
+    this.setHelpUrl('https://resource.webduino.io/docs/cloud-component/component-light/lcd-module#lcd1602_row_column');
   }
 };
