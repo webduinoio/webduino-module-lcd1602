@@ -59,11 +59,11 @@ Blockly.Blocks['lcd1602_new'] = {
         ["18", "18"],
         ["19", "19"]
       ]), "scl_")
-      // .appendField(Blockly.Msg.WEBDUINO_LCD1602_ADDR, "  位址")
-      // .appendField(new Blockly.FieldDropdown([
-      //   ["0x3F", "0x3F"],
-      //   ["0x27", "0x27"]
-      // ]), "addr_");
+      .appendField(Blockly.Msg.WEBDUINO_LCD1602_ADDR, "  位址")
+      .appendField(new Blockly.FieldDropdown([
+        ["0x3F", "0x3F"],
+        ["0x27", "0x27"]
+      ]), "addr_");
     this.setOutput(true);
     this.setColour(230);
     this.setTooltip('');

@@ -17,7 +17,7 @@
   var Module = scope.Module;
   var _backlight;
 
-  function LCD1602(board, sda, scl, addr = 0x27) {
+  function LCD1602(board, sda, scl, addr) {
     Module.call(this);
     this._board = board;
     self = this;
