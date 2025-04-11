@@ -1,5 +1,5 @@
-var mainUrl = 'https://tutorials.webduino.io/zh-tw/docs/';
-var utmUrl = '?utm_source=cloud-blockly&utm_medium=contextMenu&utm_campaign=tutorials';
+var mainUrl = 'https://resource.webduino.io/docs/cloud-component/component-light/lcd-module';
+var utmUrl = '';
 
 Blockly.Blocks['lcd1602_clear'] = {
   init: function() {
@@ -10,7 +10,7 @@ Blockly.Blocks['lcd1602_clear'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl(mainUrl + '#lcd1602_clear');
   }
 };
 
@@ -59,15 +59,15 @@ Blockly.Blocks['lcd1602_new'] = {
         ["18", "18"],
         ["19", "19"]
       ]), "scl_")
-      // .appendField(Blockly.Msg.WEBDUINO_LCD1602_ADDR, "  位址")
-      // .appendField(new Blockly.FieldDropdown([
-      //   ["0x3F", "0x3F"],
-      //   ["0x27", "0x27"]
-      // ]), "addr_");
+      .appendField(Blockly.Msg.WEBDUINO_LCD1602_ADDR, "  位址")
+      .appendField(new Blockly.FieldDropdown([
+        ["0x3F", "0x3F"],
+        ["0x27", "0x27"]
+      ]), "addr_");
     this.setOutput(true);
     this.setColour(230);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl(mainUrl + '#lcd1602_new');
   }
 };
 
@@ -80,7 +80,7 @@ Blockly.Blocks['lcd1602_print'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
+    this.setHelpUrl(mainUrl + '#lcd1602_print');
   }
 };
 
@@ -114,6 +114,6 @@ Blockly.Blocks['lcd1602_row_column'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip("");
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
+    this.setHelpUrl(mainUrl + '#lcd1602_row_column');
   }
 };
